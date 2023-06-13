@@ -1,0 +1,70 @@
+html, * {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    margin: 20px;
+    max-width: 800px;
+}
+
+main {
+    margin: 40px 0;
+}
+
+.grid {
+    margin: 20px 0;
+    display: grid;
+    gap: 12px;
+}
+
+.grid > .cell {
+    padding: 16px;
+    border: 2px solid green;
+}
+
+@media screen and (min-width: 840px) {
+    body {
+        margin: 20px auto;
+        max-width: 800px;
+    }
+    
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen {
+    body {
+        color: green;
+        font-size: 16px;
+    }
+    /* Just to visualize when JS event is fired */
+    .style-for-print {
+        background-color: black;
+        color: white;
+    }
+}
+
+/* Print Styling */
+@media print {
+    * {
+        color: black;
+        border-color: black !important;
+    }
+
+    body {
+        font-size: 12pt;
+        max-width: none;
+    }    
+    
+    .hide-for-print {
+        display: none;
+    }
+}
+
+@media screen, print {
+    body {
+        line-height: 1.2;
+    }
+}
