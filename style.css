@@ -12,6 +12,10 @@ main {
     margin: 40px 0;
 }
 
+h1, h2, p {
+    margin-bottom: 16px;
+}
+
 .grid {
     margin: 20px 0;
     display: grid;
@@ -67,4 +71,20 @@ main {
     body {
         line-height: 1.2;
     }
+}
+
+/* Targets all the pages */
+@page {
+    size: 8.5in 9in;
+    margin-top: 4in;
+}
+
+/* Targets all even-numbered pages */
+@page :left {
+    margin-left: 4cm;
+}
+
+/* Targets all odd-numbered pages */
+@page :right {
+    margin-right: 4cm;
 }

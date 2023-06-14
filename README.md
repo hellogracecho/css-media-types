@@ -104,6 +104,12 @@ If you are defining your style sheet in a separate file, then you can also use t
 <link rel = "stylesheet" type = "text/css" media = "print" href = "mystyle.css">
 ```
 
+## @page
+The @page at-rule is a CSS at-rule used to modify different aspects of a printed page property. It targets and modifies the page's dimensions, page orientation, and margins. 
+
+Read more about it [Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/@page).
+
+
 # Other Tips
 
 ## Chrome Dev tool to Emulate CSS media type
