@@ -19,7 +19,7 @@ One of the most important features of style sheets is that they specify how a do
     
 2. within HTML
     
-    For example, in HTML 4 ([[HTML4]](https://www.w3.org/TR/CSS21/refs.html#ref-HTML4)), the "media" attribute on the LINK element specifies the target media of an external style sheet:
+    For example, in [HTML 4](https://www.w3.org/TR/CSS21/refs.html#ref-HTML4), the "media" attribute on the LINK element specifies the target media of an external style sheet:
     
     ```html
     <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
@@ -44,14 +44,14 @@ Add an additional media query to an already existing one, using a comma (this wi
 
 ```css
 @media print {
-    body { font-size: 10pt }
-  }
-  @media screen {
-    body { font-size: 13px }
-  }
-  @media screen, print {
-    body { line-height: 1.2 }
-  }
+  body { font-size: 10pt }
+}
+@media screen {
+  body { font-size: 13px }
+}
+@media screen, print {
+  body { line-height: 1.2 }
+}
 
 /* When the width is between 600px and 900px OR above 1100px - change the appearance of <div> */
 @media screen and (max-width: 900px) and (min-width: 600px), (min-width: 1100px) {
